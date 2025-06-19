@@ -42,15 +42,15 @@ INSERT INTO usuario (
   rua, numero, cep, cidade, sexo,
   email, senha, area_especializacao, titulacao, id_unidade_escola
 ) VALUES
-( 1, 'Ana',      'Silva',     '11987654321',  1,  2, 1961, 'Rua das Flores',      '101', '01001000','São Paulo',      'F','ana.silva@escola.com',     'senhaAna1',     'Matemática',    'mestrado',       1),
-( 2, 'Bruno',    'Costa',     '21923456789',  2,  3, 1962, 'Avenida Brasil',      '102', '20040030','Rio de Janeiro', 'M','bruno.costa@escola.com',   'senhaBruno2',   'Física',        'doutorado',      2),
-( 3, 'Carla',    'Pereira',   '31976543210',  3,  4, 1963, 'Travessa do Sol',     '103', '30140071','Belo Horizonte','F','carla.pereira@escola.com', 'senhaCarla3',   'Química',       'pos_doutorado',  3),
-( 4, 'Daniel',   'Oliveira',  '41987651234',  4,  5, 1964, 'Praça da Liberdade',   '104', '40015520','Salvador',       'M','daniel.oliveira@escola.com','senhaDaniel4',  'Biologia',      'mestrado',       4),
-( 5, 'Elisa',    'Santos',    '51900011122',  5,  6, 1965, 'Alameda Santos',      '105', '50010010','Fortaleza',      'F','elisa.santos@escola.com',  'senhaElisa5',   'Informática',   'doutorado',      5),
-( 6, 'Felipe',   'Rodrigues', '11923450000',  6,  7, 1966, 'Rua XV de Novembro',  '106', '01002000','São Paulo',      'M','felipe.rodrigues@escola.com','senhaFelipe6',  'História',      'pos_doutorado',  1),
-( 7, 'Gabriela', 'Almeida',   '21911122233',  7,  8, 1967, 'Estrada do Coco',     '107', '20050040','Rio de Janeiro', 'F','gabriela.almeida@escola.com','senhaGabriela7','Geografia',     'doutorado',      2),
-( 8, 'Henrique', 'Souza',     '31933344455',  8,  9, 1968, 'Rua do Comércio',     '108', '30110080','Belo Horizonte','M','henrique.souza@escola.com','senhaHenrique8','Literatura',    'mestrado',       3),
-( 9, 'Isabela',  'Lima',      '41955566677',  9, 10, 1969, 'Rua das Acácias',     '109', '40020050','Salvador',       'F','isabela.lima@escola.com',   'senhaIsabela9', 'Filosofia',     'mestrado',       4),
+(1, 'Ana',      'Silva',     '11987654321',  1,  2, 1961, 'Rua das Flores',      '101', '01001000','São Paulo',      'F','ana.silva@escola.com',     'senhaAna1',     'Matemática',    'mestrado',       1),
+(2, 'Bruno',    'Costa',     '21923456789',  2,  3, 1962, 'Avenida Brasil',      '102', '20040030','Rio de Janeiro', 'M','bruno.costa@escola.com',   'senhaBruno2',   'Física',        'doutorado',      2),
+(3, 'Carla',    'Pereira',   '31976543210',  3,  4, 1963, 'Travessa do Sol',     '103', '30140071','Belo Horizonte','F','carla.pereira@escola.com', 'senhaCarla3',   'Química',       'pos_doutorado',  3),
+(4, 'Daniel',   'Oliveira',  '41987651234',  4,  5, 1964, 'Praça da Liberdade',   '104', '40015520','Salvador',       'M','daniel.oliveira@escola.com','senhaDaniel4',  'Biologia',      'mestrado',       4),
+(5, 'Elisa',    'Santos',    '51900011122',  5,  6, 1965, 'Alameda Santos',      '105', '50010010','Fortaleza',      'F','elisa.santos@escola.com',  'senhaElisa5',   'Informática',   'doutorado',      5),
+(6, 'Felipe',   'Rodrigues', '11923450000',  6,  7, 1966, 'Rua XV de Novembro',  '106', '01002000','São Paulo',      'M','felipe.rodrigues@escola.com','senhaFelipe6',  'História',      'pos_doutorado',  1),
+(7, 'Gabriela', 'Almeida',   '21911122233',  7,  8, 1967, 'Estrada do Coco',     '107', '20050040','Rio de Janeiro', 'F','gabriela.almeida@escola.com','senhaGabriela7','Geografia',     'doutorado',      2),
+(8, 'Henrique', 'Souza',     '31933344455',  8,  9, 1968, 'Rua do Comércio',     '108', '30110080','Belo Horizonte','M','henrique.souza@escola.com','senhaHenrique8','Literatura',    'mestrado',       3),
+(9, 'Isabela',  'Lima',      '41955566677',  9, 10, 1969, 'Rua das Acácias',     '109', '40020050','Salvador',       'F','isabela.lima@escola.com',   'senhaIsabela9', 'Filosofia',     'mestrado',       4),
 (10,'João',      'Carvalho',  '51977788899', 10, 11, 1970, 'Rua das Palmeiras',   '110', '50020020','Fortaleza',      'M','joao.carvalho@escola.com',  'senhaJoao10',   'Sociologia',    'doutorado',      5),
 (11,'Karina',    'Gomes',     '11988877766', 11, 12, 1971, 'Rua Marechal Deodoro','111', '01003000','São Paulo',      'F','karina.gomes@escola.com',   'senhaKarina11', 'Ed. Física',    'mestrado',       1),
 (12,'Lucas',     'Ribeiro',   '21966655544', 12,  1, 1972, 'Rua Boa Vista',       '112', '20060060','Rio de Janeiro', 'M','lucas.ribeiro@escola.com',  'senhaLucas12',  'Arte',          'pos_doutorado',  2),
@@ -170,7 +170,6 @@ INSERT INTO disciplina (codigo, nome, n_aulas_semanais, id_unidade_escola) VALUE
   ('D20','Nutrição e Dietética',            4,5)
 ;
 
-
 -- 10) Salas (10)
 INSERT INTO sala (codigo, capacidade) VALUES
   ('S01',22),('S02',24),('S03',26),('S04',28),('S05',30),
@@ -179,11 +178,11 @@ INSERT INTO sala (codigo, capacidade) VALUES
 
 -- 11) Ofertas (40)
 INSERT INTO oferta (id, ano, semestre, codigo_sala, codigo_disciplina) VALUES
-  ( 1,2024,1,'S01','D01'),( 2,2025,2,'S02','D01'),
-  ( 3,2024,1,'S03','D02'),( 4,2025,2,'S04','D02'),
-  ( 5,2024,1,'S05','D03'),( 6,2025,2,'S06','D03'),
-  ( 7,2024,1,'S07','D04'),( 8,2025,2,'S08','D04'),
-  ( 9,2024,1,'S09','D05'),(10,2025,2,'S10','D05'),
+  (1,2024,1,'S01','D01'),( 2,2025,2,'S02','D01'),
+  (3,2024,1,'S03','D02'),( 4,2025,2,'S04','D02'),
+  (5,2024,1,'S05','D03'),( 6,2025,2,'S06','D03'),
+  (7,2024,1,'S07','D04'),( 8,2025,2,'S08','D04'),
+  (9,2024,1,'S09','D05'),(10,2025,2,'S10','D05'),
   (11,2024,1,'S01','D06'),(12,2025,2,'S02','D06'),
   (13,2024,1,'S03','D07'),(14,2025,2,'S04','D07'),
   (15,2024,1,'S05','D08'),(16,2025,2,'S06','D08'),
@@ -424,15 +423,15 @@ INSERT INTO matricula (
   status,status_pagamento,
   dia_limite_confirmacao,mes_limite_confirmacao,ano_limite_confirmacao
 ) VALUES
-  ( 1,21, 1, 1,1,2024,'concluido','pago',   5,1,2024),
-  ( 2,21, 2, 2,1,2024,'ativo','pago',       6,1,2024),
-  ( 3,21, 3, 3,1,2024,'pendente','pendente', 7,1,2024),
-  ( 4,22, 4, 4,2,2024,'concluido','pago',   8,2,2024),
-  ( 5,22, 5, 5,2,2024,'ativo','pago',       9,2,2024),
-  ( 6,22, 6, 6,2,2024,'pendente','pendente',10,2,2024),
-  ( 7,23, 7, 7,3,2024,'concluido','pago',  11,3,2024),
-  ( 8,23, 8, 8,3,2024,'ativo','pago',      12,3,2024),
-  ( 9,23, 9, 9,3,2024,'pendente','pendente',13,3,2024),
+  (1,21, 1, 1,1,2024,'concluido','pago',   5,1,2024),
+  (2,21, 2, 2,1,2024,'ativo','pago',       6,1,2024),
+  (3,21, 3, 3,1,2024,'pendente','pendente', 7,1,2024),
+  (4,22, 4, 4,2,2024,'concluido','pago',   8,2,2024),
+  (5,22, 5, 5,2,2024,'ativo','pago',       9,2,2024),
+  (6,22, 6, 6,2,2024,'pendente','pendente',10,2,2024),
+  (7,23, 7, 7,3,2024,'concluido','pago',  11,3,2024),
+  (8,23, 8, 8,3,2024,'ativo','pago',      12,3,2024),
+  (9,23, 9, 9,3,2024,'pendente','pendente',13,3,2024),
   (10,24,10,10,4,2024,'concluido','pago',  14,4,2024),
   (11,24,11,11,4,2024,'ativo','pago',      15,4,2024),
   (12,24,12,12,4,2024,'pendente','pendente',16,4,2024),
@@ -462,7 +461,29 @@ INSERT INTO matricula (
   (36,32,19,19,7,2025,'pendente','pendente',20,7,2025),
   (37,33,20,20,8,2025,'concluido','pago',  21,8,2025),
   (38,33,21,21,9,2025,'ativo','pago',      22,9,2025),
-  (39,33,22,22,9,2025,'pendente','pendente',23,9,2025)
+  (39,33,22,22,9,2025,'pendente','pendente',23,9,2025),
+  (40,21,40, 1, 1,2025,'concluido','pago', 5, 1,2025),
+  (41,22, 1, 2, 1,2025,'concluido','pago', 6, 1,2025),
+  (42,23, 2, 3, 1,2025,'concluido','pago', 7, 1,2025),
+  (43,24, 3, 4, 2,2025,'concluido','pago', 8, 2,2025),
+  (44,25, 4, 5, 2,2025,'concluido','pago', 9, 2,2025),
+  (45,26, 5, 6, 2,2025,'concluido','pago', 10, 2,2025),
+  (46,27, 6, 7, 3,2025,'concluido','pago', 11, 3,2025),
+  (47,28, 7, 8, 3,2025,'concluido','pago', 12, 3,2025),
+  (48,29, 8, 9, 3,2025,'concluido','pago', 13, 3,2025),
+  (49,30, 9, 10, 4,2025,'concluido','pago', 14, 4,2025),
+  (50,31,10, 11, 4,2025,'concluido','pago', 15, 4,2025),
+  (51,32,11, 12, 4,2025,'concluido','pago', 16, 4,2025),
+  (52,33,12, 13, 5,2025,'concluido','pago', 17, 5,2025),
+  (53,34,13, 14, 5,2025,'concluido','pago', 18, 5,2025),
+  (54,35,14, 15, 5,2025,'concluido','pago', 19, 5,2025),
+  (55,36,15, 16, 6,2025,'concluido','pago', 20, 6,2025),
+  (56,37,16, 17, 6,2025,'concluido','pago', 21, 6,2025),
+  (57,38,17, 18, 1,2025,'concluido','pago', 22, 1,2025),
+  (58,39,18, 19, 1,2025,'concluido','pago', 23, 1,2025),
+  (59,40,19, 20, 1,2025,'concluido','pago', 24, 1,2025),
+  (60,21,20, 21, 2,2025,'concluido','pago', 25, 2,2025)
+;
 ;
 
 -- 22) Matrícula–Bolsa (20)
@@ -548,15 +569,15 @@ INSERT INTO avaliacao_disciplina (
 INSERT INTO aviso (
   id,texto_mensagem,dia_criacao,mes_criacao,ano_criacao,hora_criacao,id_funcionario_administrativo
 ) VALUES
-  ( 1,'Manutenção no sistema',  1,1,2024,'09:00',41),
-  ( 2,'Reunião de equipe',      2,1,2024,'10:00',42),
-  ( 3,'Entrega de relatórios',   3,2,2024,'11:00',43),
-  ( 4,'Feira de ciências',       4,2,2024,'12:00',44),
-  ( 5,'Planejamento anual',      5,3,2024,'13:00',45),
-  ( 6,'Visita técnica',          6,3,2024,'14:00',46),
-  ( 7,'Concurso interno',        7,4,2024,'15:00',47),
-  ( 8,'Atualização de currículo',8,4,2024,'16:00',48),
-  ( 9,'Seminário externo',       9,5,2024,'09:30',49),
+  (1,'Manutenção no sistema',  1,1,2024,'09:00',41),
+  (2,'Reunião de equipe',      2,1,2024,'10:00',42),
+  (3,'Entrega de relatórios',   3,2,2024,'11:00',43),
+  (4,'Feira de ciências',       4,2,2024,'12:00',44),
+  (5,'Planejamento anual',      5,3,2024,'13:00',45),
+  (6,'Visita técnica',          6,3,2024,'14:00',46),
+  (7,'Concurso interno',        7,4,2024,'15:00',47),
+  (8,'Atualização de currículo',8,4,2024,'16:00',48),
+  (9,'Seminário externo',       9,5,2024,'09:30',49),
   (10,'Palestra motivacional',  10,5,2024,'10:30',50),
   (11,'Teste de software',      11,6,2024,'11:30',51),
   (12,'Recesso escolar',        12,6,2024,'12:30',52),
@@ -574,15 +595,15 @@ INSERT INTO aviso (
 INSERT INTO mensagem (
   id,texto_mensagem,dia_criacao,mes_criacao,ano_criacao,hora_criacao,id_usuario
 ) VALUES
-  ( 1,'Olá, tudo bem?',       1,1,2024,'08:00',21),
-  ( 2,'Preciso de ajuda',      2,1,2024,'08:05',22),
-  ( 3,'Quando é a prova?',     3,2,2024,'08:10',23),
-  ( 4,'Enviei o trabalho',     4,2,2024,'08:15',24),
-  ( 5,'Obrigado!',             5,3,2024,'08:20',25),
-  ( 6,'Boa tarde',             6,3,2024,'08:25',26),
-  ( 7,'Qual conteúdo?',        7,4,2024,'08:30',27),
-  ( 8,'Bom dia',               8,4,2024,'08:35',28),
-  ( 9,'Posso adiar?',          9,5,2024,'08:40',29),
+  (1,'Olá, tudo bem?',       1,1,2024,'08:00',21),
+  (2,'Preciso de ajuda',      2,1,2024,'08:05',22),
+  (3,'Quando é a prova?',     3,2,2024,'08:10',23),
+  (4,'Enviei o trabalho',     4,2,2024,'08:15',24),
+  (5,'Obrigado!',             5,3,2024,'08:20',25),
+  (6,'Boa tarde',             6,3,2024,'08:25',26),
+  (7,'Qual conteúdo?',        7,4,2024,'08:30',27),
+  (8,'Bom dia',               8,4,2024,'08:35',28),
+  (9,'Posso adiar?',          9,5,2024,'08:40',29),
   (10,'Até logo',             10,5,2024,'08:45',30),
   (11,'Pergunta rápida',      11,6,2024,'08:50',31),
   (12,'Mensagem de teste',    12,6,2024,'08:55',32),
@@ -618,9 +639,9 @@ INSERT INTO mensagem (
 
 -- 27) Destinatários (80) – 2 por mensagem
 INSERT INTO destinatario (id_mensagem,id_destinatario) VALUES
-  ( 1,22),( 1,23),( 2,23),( 2,24),( 3,24),( 3,25),( 4,25),( 4,26),
-  ( 5,26),( 5,27),( 6,27),( 6,28),( 7,28),( 7,29),( 8,29),( 8,30),
-  ( 9,30),( 9,21),(10,21),(10,22),(11,22),(11,23),(12,23),(12,24),
+  (1,22),( 1,23),( 2,23),( 2,24),( 3,24),( 3,25),( 4,25),( 4,26),
+  (5,26),( 5,27),( 6,27),( 6,28),( 7,28),( 7,29),( 8,29),( 8,30),
+  (9,30),( 9,21),(10,21),(10,22),(11,22),(11,23),(12,23),(12,24),
   (13,24),(13,25),(14,25),(14,26),(15,26),(15,27),(16,27),(16,28),
   (17,28),(17,29),(18,29),(18,30),(19,30),(19,21),(20,21),(20,22),
   (21,22),(21,23),(22,23),(22,24),(23,24),(23,25),(24,25),(24,26),
@@ -656,9 +677,9 @@ INSERT INTO nota (id_matricula,motivo,valor) VALUES
 
 -- 29) Descontos (18)
 INSERT INTO desconto (id_matricula, motivo, valor) VALUES
-  ( 2, 'Bolsa de Mérito Acadêmico',      500.00),
-  ( 5, 'Bolsa Social',                   300.00),
-  ( 8, 'Desconto por Pontualidade',      150.00),
+  (2, 'Bolsa de Mérito Acadêmico',      500.00),
+  (5, 'Bolsa Social',                   300.00),
+  (8, 'Desconto por Pontualidade',      150.00),
   (11, 'Desconto Ex-Aluno',              200.00),
   (14, 'Desconto por Indicação',         100.00),
   (17, 'Bolsa de Pesquisa',              400.00),
@@ -678,15 +699,15 @@ INSERT INTO desconto (id_matricula, motivo, valor) VALUES
 
 -- 30) Taxas (60)
 INSERT INTO taxa (id_matricula, motivo, valor) VALUES
-  ( 1, 'Taxa de Matrícula',           200.00),
-  ( 2, 'Taxa de Material Didático',    50.00),
-  ( 3, 'Taxa de Laboratório',         100.00),
-  ( 4, 'Taxa de Biblioteca',           30.00),
-  ( 5, 'Taxa de Certificação',         80.00),
-  ( 6, 'Taxa de Matrícula',           200.00),
-  ( 7, 'Taxa de Material Didático',    50.00),
-  ( 8, 'Taxa de Laboratório',         100.00),
-  ( 9, 'Taxa de Biblioteca',           30.00),
+  (1, 'Taxa de Matrícula',           200.00),
+  (2, 'Taxa de Material Didático',    50.00),
+  (3, 'Taxa de Laboratório',         100.00),
+  (4, 'Taxa de Biblioteca',           30.00),
+  (5, 'Taxa de Certificação',         80.00),
+  (6, 'Taxa de Matrícula',           200.00),
+  (7, 'Taxa de Material Didático',    50.00),
+  (8, 'Taxa de Laboratório',         100.00),
+  (9, 'Taxa de Biblioteca',           30.00),
   (10, 'Taxa de Certificação',         80.00),
   (11, 'Taxa de Matrícula',           200.00),
   (12, 'Taxa de Material Didático',    50.00),
