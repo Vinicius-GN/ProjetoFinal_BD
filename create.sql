@@ -143,29 +143,32 @@ CREATE TABLE matricula (
 
 DROP TABLE IF EXISTS avaliacao_professor CASCADE;
 CREATE TABLE avaliacao_professor (
-  nome_disciplina varchar,
-  id_professor int,
-  id_aluno int,
-  didatica int,
+  nome_disciplina     varchar NOT NULL,
+  id_professor        int     NOT NULL,
+  id_aluno            int     NOT NULL,
+  didatica_nota            decimal(3,1) NOT NULL
+    CHECK (didatica_nota BETWEEN 0.0 AND 10.0),
   PRIMARY KEY (nome_disciplina, id_aluno, id_professor),
-
-  FOREIGN KEY (id_aluno) REFERENCES usuario (id),
+  FOREIGN KEY (id_aluno)     REFERENCES usuario (id),
   FOREIGN KEY (id_professor) REFERENCES usuario (id)
 );
 
 DROP TABLE IF EXISTS avaliacao_disciplina CASCADE;
 CREATE TABLE avaliacao_disciplina (
-  id_aluno int,
-  codigo_disciplina varchar,
-  comentario_texto text,
-  material_apoio int,
-  infraestrutura_sala int,
-  relevancia_conteudo int,
+  id_aluno             int     NOT NULL,
+  codigo_disciplina    varchar NOT NULL,
+  comentario_texto     text,
+  material_apoio_nota       decimal(3,1) NOT NULL
+    CHECK (material_apoio_nota BETWEEN 0.0 AND 10.0),
+  infraestrutura_sala_nota  decimal(3,1) NOT NULL
+    CHECK (infraestrutura_sala_nota BETWEEN 0.0 AND 10.0),
+  relevancia_conteudo_nota  decimal(3,1) NOT NULL
+    CHECK (relevancia_conteudo_nota BETWEEN 0.0 AND 10.0),
   PRIMARY KEY (id_aluno, codigo_disciplina),
-
   FOREIGN KEY (codigo_disciplina) REFERENCES disciplina (codigo),
-  FOREIGN KEY (id_aluno) REFERENCES usuario (id)
+  FOREIGN KEY (id_aluno)          REFERENCES usuario (id)
 );
+
 
 DROP TABLE IF EXISTS departamento_academico CASCADE;
 CREATE TABLE departamento_academico (
