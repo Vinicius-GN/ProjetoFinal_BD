@@ -1,15 +1,27 @@
+-- 1) Índice em Chave Estrangeira para Otimizar Junções
+CREATE INDEX IF NOT EXISTS idx_matricula_id_aluno
+ON matricula ( id_aluno ) ;
 
--- sugestoes (incompleto):
-CREATE INDEX IF NOT EXISTS  idx_usuario_nome_sobrenome_telefone ON usuario(nome, sobrenome, numero_telefone);
+-- 2) Índice para Acelerar Buscas por Disciplina
+CREATE INDEX IF NOT EXISTS idx_oferta_codigo_disciplina
+ON oferta ( codigo_disciplina ) ;
 
--- encontrar quais os acessos criticos (principalmente nos joins) que usam fk mais frequentemente
+-- 3) Índice em Tabela de Alto Crescimento (Mensagens)
+CREATE INDEX IF NOT EXISTS idx_mensagem_id_usuario
+ON mensagem ( id_usuario ) ;
 
--- mensagens, pois a base pode ter muitas mensagens gravadas (teoricamente armazena todo o historico)
-CREATE INDEX IF NOT EXISTS  idx_mensagem_id_usuario ON mensagem(id_usuario);
+-- 4) Índice para Caixa de Entrada de Mensagens
+CREATE INDEX idx_destinatario_id_destinatario ON destinatario (
+id_destinatario ) ;
 
--- avisos (mesma razao das mensagens)
-CREATE INDEX IF NOT EXISTS  idx_aviso_id_funcionario_administrativo ON aviso(id_funcionario_administrativo);
+-- 5) Índice para Listagem de Alunos por Turma
+CREATE INDEX idx_matricula_id_oferta ON matricula ( id_oferta ) ;
 
-CREATE INDEX IF NOT EXISTS  idx_matricula_id_aluno ON matricula(id_aluno);
+-- 6) Índice para Disciplinas de um Professor
+CREATE INDEX idx_responsavel_disciplina_id_professor
+ON responsavel_disciplina ( id_professor ) ;
 
-CREATE INDEX IF NOT EXISTS idx_matricula_id_oferta ON matricula(id_oferta);
+-- 7) Índice para Histórico de Avisos por Funcionário
+CREATE INDEX idx_aviso_id_funcionario
+ON aviso ( id_funcionario_administrativo ) ;
+
