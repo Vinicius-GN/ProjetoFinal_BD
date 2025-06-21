@@ -2,6 +2,10 @@
 
 Este repositório contém o código do projeto FINAL de banco de dados da disciplina de Banco de Dados do ICMC-USP.
 
+## Merx
+
+O modelo entidade relacionamento estendido pode ser encontrado em [/MERX-DIAGRAM.jpg](https://github.com/Vinicius-GN/ProjetoFinal_BD/blob/main/MERX-DIAGRAM.jpg)
+
 ## Comandos úteis para o banco de dados
 
 Para iniciar o banco de dados (PostgreSQL):
