@@ -245,7 +245,7 @@ JOIN unidade_escola ue
 WHERE ic.codigo_curso = 'C01'
 ORDER BY i.id;
 
--- 14) Carga horária semanal total de C01 em 2025/2
+-- 14) Carga semanal (numero de aulas) total de C01 em 2025/2
 SELECT 
   codigo_curso, 
   SUM(n_aulas_semanais) AS carga_semanal 
