@@ -16,7 +16,7 @@ docker run -d \
   -e POSTGRES_PASSWORD=postgres \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_DB=postgres \
-  -v postgres_data_v2:/var/lib/postgresql/data \
+  -v postgres_data:/var/lib/postgresql/data \
   -p 5432:5432 \
   postgres
 ```
@@ -29,11 +29,13 @@ Para parar e remover o banco de dados:
 docker rm -f postgres_db
 ```
 
-Para remover o volume (reiniciar os dados do zero)
+Para remover o volume (reiniciar os dados do zero):
 
 ```bash
-docker rm postgres_data
+docker volume rm postgres_data
 ```
+
+> Para utilizar esse comando, você tem que ter removido o container com o comando anterior.
 
 ### Acessando o banco de dados
 
