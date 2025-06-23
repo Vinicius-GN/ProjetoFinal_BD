@@ -5,6 +5,9 @@ Este repositório contém o código do projeto FINAL de banco de dados da discip
 ## Merx
 
 O modelo entidade relacionamento estendido pode ser encontrado em [/MERX-DIAGRAM.jpg](https://github.com/Vinicius-GN/ProjetoFinal_BD/blob/main/MERX-DIAGRAM.jpg)
+<p align="center">
+  <img src="MERX-DIAGRAM.jpg" width="70%" alt="Demonstração do Sci-Graph">
+</p>
 
 ## Comandos úteis para o banco de dados
 
