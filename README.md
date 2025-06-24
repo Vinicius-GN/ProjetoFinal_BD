@@ -31,6 +31,10 @@ docker run -d \
 ```
 
 > Para utilizar esse comando, você tem que ter removido o container com o comando anterior.
+> caso tenha uma mensagem falando "address already in use.", use o comando abaixo e depois tente iniciar o banco novamente.
+```bash
+sudo systemctl stop postgresql
+```
 
 ### Acessando o banco de dados
 
