@@ -2,7 +2,7 @@
 CREATE INDEX IF NOT EXISTS idx_matricula_id_aluno ON matricula ( id_aluno ) ;
 
 -- 2) Índice para Acelerar Buscas por Disciplina
-CREATE INDEX idx_oferta_disciplina_ano_semestre ON oferta (codigo_disciplina, ano, semestre);
+CREATE INDEX IF NOT EXISTS idx_oferta_disciplina_ano_semestre ON oferta (codigo_disciplina, ano, semestre);
 
 -- 3) Índice em Tabela de Alto Crescimento (Mensagens)
 CREATE INDEX IF NOT EXISTS idx_mensagem_id_usuario ON mensagem ( id_usuario ) ;
